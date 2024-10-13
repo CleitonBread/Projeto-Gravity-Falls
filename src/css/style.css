@@ -1,0 +1,165 @@
+body {
+    font-family: "Poppins" ,sans-serif;
+    background-image: url("../imagens/Backgroud.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    backdrop-filter: blur(4px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.personagens {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.cartao-personagem {
+    display: none;
+    max-width: 360px;
+    border-radius: 8px;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cartao-personagem.aberto {
+    display: block;
+}
+
+.cartao-personagem img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.cartao-personagem .cartao-topo {
+    padding: 30px 40px 0px;
+}
+
+.cartao-personagem .nome {
+    margin-bottom: 5px;
+}
+
+.cartao-personagem .detalhes {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao-personagem .cartao-informacoes {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cartao-personagem .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6b727a;
+}
+
+.cartao-personagem .cartao-informacoes .descricao {
+    padding: 0 10px;
+    font-size: 15px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.dipper-color {
+    background-color: #015c98;
+}
+
+.mabel-color {
+    background-color: #e281d8;
+}
+
+.stan-color {
+    background-color: #6d0026;
+}
+
+.ford-color {
+    background-color: #c1aa9a;
+}
+
+.wendy-color {
+    background-color: #b74113;
+}
+
+.soos-color {
+    background-color: #11551a;
+}
+
+.bills-color {
+    background-color: #fcc719;
+}
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .personagem img {
+    width: 25%;
+}
+
+.listagem .personagem {
+    background-color: #6b727a;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    margin: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 50px;
+
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .personagem:hover {
+    transform: scale(1.10);
+}
+
+.listagem .personagem span {
+    padding-right: 20px;
+}
+
+.listagem .personagem.ativa {
+    background-color: #203145;
+}
+
+main:after {
+	content: "";
+	min-height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
+}
+
